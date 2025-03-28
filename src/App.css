@@ -1,5 +1,112 @@
+@font-face {
+  font-family: Inter-regular;
+  src: local('Inter-regular'), url(./fonts/Inter/Inter-Regular.ttf) format('truetype');
+}
 
 .nav-container{
-  border: 2px solid red;
   height: 100px;
+  display: flex;
+  width: 100%;
+  background-color: #FFFFFF;
+  position: fixed;
+}
+.logo-wrap{
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+.logo-wrap img{
+  width: 100%;
+}
+.nav-menu{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+ul li{
+  display: inline;
+  margin-right: 50px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: Inter-regular;
+  font-weight: 600;
+  color: #021148;
+}
+ul li:hover{
+  color: red;
+}
+.nav-search{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.search-icon{
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  font-size: 16px;
+  left: 10px;
+  color: grey;
+}
+
+.search-wrap{
+  height: 40px;
+  width: 250px;
+}
+.search-text{
+  height: inherit;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  font-size: 16px;
+  padding-left: 40px;
+  padding-right: 10px;
+}
+.nav-buttons{
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: Inter-regular;
+  font-weight: 600;
+}
+.sign-in{
+  border: 2px solid #021148;
+  width: 80px;
+  height: 40%;
+  margin-right: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #021148;
+}
+.sign-up{
+  border: 2px solid #021148;
+  width: 100px;
+  height: 40%;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  /* background-color: #131D41; */
+  background-color: #021148;
+  color: #FFFFFF;
+}
+input{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  outline: none;
+  border: 1px solid grey;
 }
