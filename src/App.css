@@ -17,6 +17,7 @@
 }
 .logo-wrap img{
   width: 100%;
+  height: 60%;
 }
 .nav-menu{
   width: 50%;
@@ -35,7 +36,7 @@ ul li{
   color: #021148;
 }
 ul li:hover{
-  color: red;
+  color: #677091;
 }
 .nav-search{
   position: relative;
@@ -76,6 +77,7 @@ ul li:hover{
   cursor: pointer;
   font-family: Inter-regular;
   font-weight: 600;
+  position: relative;
 }
 .sign-in{
   border: 2px solid #021148;
@@ -88,6 +90,10 @@ ul li:hover{
   justify-content: center;
   cursor: pointer;
   color: #021148;
+}
+.sign-in:hover{
+  color: #677091;
+  border: 2px solid #677091;
 }
 .sign-up{
   border: 2px solid #021148;
@@ -102,6 +108,19 @@ ul li:hover{
   background-color: #021148;
   color: #FFFFFF;
 }
+.mobile-nav{
+  width: 50px;
+  height: 40%;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: #021148;
+  display: none;
+}
+.sign-up:hover{
+  background-color: #677091;
+  border: 2px solid #677091;
+}
 input{
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -109,4 +128,104 @@ input{
   width: 100%;
   outline: none;
   border: 1px solid grey;
+}
+.m-nav-container{
+  position: fixed;
+  right: -100vh;
+  width: 50%;
+  height: 100vh;
+  margin-top: 100px;
+  z-index: 1;
+  background: #021148;
+  transition: right 1s;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+  padding-top: 50px;
+  display: none;
+}
+.m-nav-wrap{
+  width: 100%;
+  height: inherit;
+}
+.m-list{
+  height: 50vh;
+  margin-top: 0px;
+  color: #FFFFFF;
+}
+.ml-1{
+  width: 100%;
+  font-size: 18px;
+  height: 200px;
+  margin-top: 200px;
+  font-family: Inter-regular;
+  border: 2px solid #021148;
+  margin-top: 10px;
+}
+#slide-in{
+  right: 0;   
+}
+
+.mobile-nav-search{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.search-icon{
+  width: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  font-size: 16px;
+  left: 10px;
+  color: grey;
+}
+
+.mobile-search-wrap{
+  height: 40px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-text{
+  height: inherit;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  font-size: 16px;
+  padding-left: 40px;
+  padding-right: 10px;
+}
+@media screen and (max-width: 1020px) and (min-width:50px){
+  .sign-in{
+    display: none;
+
+  }
+  .nav-buttons{
+    width: 80%;
+  }
+  .logo-wrap{
+    width: 20%;
+  }
+
+  .sign-up{
+    display: none;
+  }
+  .mobile-nav{
+    display: flex;
+    position: absolute;
+    right: 0;
+  }
+
+  .nav-menu{
+    display: none;
+  }
+  .logo-wrap img{
+    width: 150px;
+    height: 40px;
+  }
+  .m-nav-container{
+    display: block;
+  }
 }
