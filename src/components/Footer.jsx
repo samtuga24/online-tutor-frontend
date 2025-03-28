@@ -8,34 +8,34 @@ export const Footer = () => {
             <div className="footer-wrap">
                 <div className="footer-logo"><img src={logo} alt="" /></div>
                 <div className="quick-links">
-                    <div className="contact-header">Company</div>
+                    <div className="contact-header">About</div>
                     <div className="contact-items">
-                        <div className="item-1">About Us</div>
+                        <div className="about-item">About Us</div>
                     </div>
                 </div>
                 <div className="tutors">
                     <div className="contact-header">Tutors</div>
                     <div className="contact-items">
-                        <div className="item-1">Mathematics</div>
+                        <div className="about-item">Mathematics</div>
                     </div>
 
                     <div className="contact-items">
-                        <div className="item-1">Physics</div>
+                        <div className="about-item">Physics</div>
                     </div>
 
                     <div className="contact-items">
-                        <div className="item-1">Chemistry</div>
+                        <div className="about-item">Chemistry</div>
                     </div>
                     <div className="contact-items">
-                        <div className="item-1">Biology</div>
-                    </div>
-
-                    <div className="contact-items">
-                        <div className="item-1">English</div>
+                        <div className="about-item">Biology</div>
                     </div>
 
                     <div className="contact-items">
-                        <div className="item-1">Chemistry</div>
+                        <div className="about-item">English</div>
+                    </div>
+
+                    <div className="contact-items">
+                        <div className="about-item">Science</div>
                     </div>
                 </div>
                 <div className="contact">
