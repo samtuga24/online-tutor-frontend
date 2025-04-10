@@ -82,7 +82,7 @@ export const Courses = () => {
                 </div>
             </div>
             <div className="show-courses-wrap">
-                <div className="show-courses">Show  all Courses</div>
+                <div className="show-courses">Show  all Subjects</div>
             </div>
         </div>
     )

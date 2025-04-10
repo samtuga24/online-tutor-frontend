@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Nav } from '../components/Nav'
 import { FaEnvelope, FaLock, FaEye, FaGoogle, FaFacebookF } from 'react-icons/fa6'
+import { Link } from 'react-router-dom';
 export const Login = () => {
   const [showPass, setShowPass] = useState(false);
   return (
@@ -26,7 +27,7 @@ export const Login = () => {
             <div className="login-icon-pass" onClick={() => setShowPass(!showPass)}><FaEye /></div>
           </div>
           <div className="submit-btn-wrap">
-            <div className="submit-btn">Login</div>
+            <Link to="../student-dashboard" className="submit-btn nav-link"><div>Login</div></Link>
             <div className="f-pass">Forgotten your password?</div>
           </div>
         </div>

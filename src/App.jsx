@@ -10,6 +10,9 @@ import { NavProvider } from './context/NavContext'
 import { Login } from './pages/Login'
 import { Home } from './pages/Home'
 import { SignUp } from './pages/SignUp'
+import { TutorSignUp } from './pages/TutorSignUp'
+import { StudentSignUp } from './pages/StudentSignUp'
+import { StudentDashboard } from './pages/StudentDashboard'
 function App() {
   return (
     <NavProvider>
@@ -18,6 +21,9 @@ function App() {
           <Route exact path="/" element={<Home/>}/>
           <Route path='login' element={<Login/>}/>
           <Route path='signup' element={<SignUp/>}/>
+          <Route path="register-tutor" element={<TutorSignUp/>}/>
+          <Route path="register-student" element={<StudentSignUp/>}/>
+          <Route path="student-dashboard" element={<StudentDashboard/>}/>
         </Routes>
       </HashRouter>
     </NavProvider>

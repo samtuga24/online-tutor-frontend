@@ -296,6 +296,21 @@ margin-left: 8px;
   height: 500px;
   width: 100%;
   z-index: -2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hide{
+  visibility: hidden;
+}
+.intro-wrap{
+  font-family: Inter-regular;
+  font-weight: 600;
+  font-size: 40px;
+  width: 70%;
+  text-align: center;
+  line-height: 60px;
+  cursor: default;
 }
 .course-container{
   height: fit-content;
@@ -415,13 +430,23 @@ margin-left: 8px;
   display: flex;
   justify-content: center;
   height: fit-content;
+
 }
 .login-form{
-  width: 400px;
+  width: 450px;
+background-color: #FFFFFF;
+  padding-bottom: 50px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px #ededed;
 }
 .form-input{
   height: 50px;
-  width: inherit;
+  width: 350px;
   margin-top: 30px;
   position: relative;
   display: flex;
@@ -432,7 +457,7 @@ margin-left: 8px;
   margin-top: 30px;
   position: relative;
   align-items: center;
-  width: inherit;
+  width: 350px;
   font-family: Inter-regular;
 }
 .select-label{
@@ -490,7 +515,7 @@ margin-left: 8px;
   align-items: center;
   justify-content: center;
   height: inherit;
-  width: inherit;
+  width: 350px;
   border-radius: 10px;
   background-color: #021148;
   cursor: pointer;
@@ -514,7 +539,7 @@ margin-left: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 400px;
+  width: 350px;
   border-radius: 10px;
   border: 2px solid #021148;
   cursor: pointer;
@@ -543,8 +568,24 @@ margin-left: 8px;
 .tutor{
   width: inherit;
 }
-.student{
-  width: inherit;
+.student-container{
+  width: 100%;
+  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+  margin-top: 120px;
+}
+.student-wrap{
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  width: 420px;
+  padding-bottom: 50px;
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 10px 10px 10px #ededed;
 }
 .desc-wrap{
   width: inherit;
@@ -589,10 +630,235 @@ input[type="file"]::-webkit-file-upload-button{
   cursor: pointer;
   height: 50px;
 }
+.account-wrap{
+  height: 50px;
+  width: 200px;
+  display: flex;
+}
+.acc-icon{
+  width: 50px;
+  height: inherit;
+  font-size: 30px;
+  color: #021148;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.acc-name{
+  width: 150px;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.student-nav-container{
+  height: 100px;
+}
+
+.s-dash-container{
+  margin-top: 100px;
+  position: relative;
+  height: fit-content;
+  width: 100%;
+  height: 600px;
+}
+
+.courses-card{
+  font-family: Inter-regular;
+  width: 450px;
+  margin-top: 20px;
+  margin-left: 150px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background-color: #f1f4fc;
+}
+.dash-1{
+  display: flex;
+  height: fit-content;
+}
+.card-wrap{
+  width: 90%;
+  height: 250px;
+}
+.card-title{
+  font-weight: 600;
+  font-size: 18px;
+  height: 30px;
+  width: 100%;
+  display: flex;
+}
+.card-desc{
+  height: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  background-color: #FFFFFF;
+  margin-top: 20px;
+}
+.desc-name-wrap{
+  position: relative;
+  display: flex;
+  height: 50px;
+  align-items: center;
+  width: 92%;
+}
+.desc-name{
+  font-weight: 600;
+  height: fit-content;
+}
+.tutor-name{
+  font-weight: 500;
+}
+.desc-icon{
+  height: fit-content;
+  font-weight: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+}
+.progress-icon{
+  height: 20px;
+  width: 92%;
+}
+.progress{
+  height: 20px;
+  width: 92%;
+  font-size: 16px;
+}
+progress{
+  width: 100%;
+}
+progress::-webkit-progress-value{
+  background-color: red;
+}
+progress::-webkit-progress-bar{
+  background-color: red;
+}
+
+
+
+.course-btns{
+  display: flex;
+  height: 50px;
+  font-size: 14px;
+  align-items: center;
+  width: 92%;
+}
+.c-btn-1{
+  background-color: #021148;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  color: #FFFFFF;
+  margin-right: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.c-btn-2{
+  background-color: #677091;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  color: #FFFFFF;
+  margin-right: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.c-btn-3{
+  background-color: #677091;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  color: #FFFFFF;
+  margin-right: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.notification-wrap{
+  border: 1px solid #677091;
+  width: 450px;
+  height: 280px;
+  margin-top: 20px;
+  border-radius: 12px;
+  font-family: Inter-regular;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 100px;
+  cursor: pointer;
+}
+
+.notify-title{
+  font-weight: 600;
+  font-size: 18px;
+  width: 90%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+.n-item-wrap{
+  display: flex;
+  position: relative;
+  height: 50px;
+  width: 90%;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.n-item{
+  font-size: 18px;
+  width: fit-content;
+  font-weight: 600;
+}
+.n-sub{
+  font-size: 16px;
+  font-weight: 500;
+}
+.n-item-btn{
+  width: 80px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  position: absolute;
+  right: 0;
+}
+.n-item-btn-up{
+  width: 80px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  position: absolute;
+  right: 0;
+}
+.session-wrap{
+  border: 2px solid red;
+}
+
+
 @media screen and (max-width: 1020px) and (min-width:50px){
   .sign-in{
     display: none;
 
+  }
+  .account-wrap{
+display: none;
   }
   .nav-buttons{
     width: 80%;
