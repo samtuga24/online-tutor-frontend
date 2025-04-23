@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Link } from 'react-scroll'
+import { Link, Links } from 'react-router-dom'
 import { FaMagnifyingGlass } from 'react-icons/fa6'
 import NavContext from '../context/NavContext';
 export const MobileNav = () => {
@@ -16,8 +16,10 @@ export const MobileNav = () => {
             </div>
             <div className="m-nav-wrap">
                 <div className="m-list">
-                    <Link className="ml-1" to='' spy={false} smooth={true} offset={-100} duration={800}><div>Login</div></Link>
-                    <Link className="ml-1" to='' spy={false} smooth={true} offset={-100} duration={800}><div>Sign Up</div></Link>
+                    {/* <Link to="../login" className='nav-link'>Login</Link> */}
+                    <Link className="ml-1 m-nav-link" to='../login' ><div>Login</div></Link>
+                    <Link className="ml-1 m-nav-link" to='../signup' ><div>Sign up</div></Link>
+                    {/* <Link className="ml-1" to='' spy={false} smooth={true} offset={-100} duration={800}><div>Sign Up</div></Link> */}
                 </div>
             </div>
         </div>

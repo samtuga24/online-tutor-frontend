@@ -19,6 +19,11 @@ body{
   color: #021148;
 }
 
+.m-nav-link{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
 .nav-link-up{
   text-decoration: none;
   color: #FFFFFF;
@@ -736,11 +741,23 @@ input[type="file"]::-webkit-file-upload-button{
 progress{
   width: 100%;
 }
-progress::-webkit-progress-value{
-  background-color: red;
+progress[value] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 20px;
 }
-progress::-webkit-progress-bar{
-  background-color: red;
+
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 15px;
+  height: 5px;
+}
+
+progress[value]::-webkit-progress-value {
+  background-color: #021148; /* <-- Progress color */
+  border-radius: 15px;
+  height: 5px;
 }
 
 
@@ -847,10 +864,89 @@ progress::-webkit-progress-bar{
   position: absolute;
   right: 0;
 }
-.session-wrap{
-  border: 2px solid red;
+.chart-wrap{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-
+.chart{
+  width: 450px;
+  margin-top: 20px;
+  margin-left: 150px;
+  height: 300px;
+  font-family: Inter-regular;
+}
+.assignment-wrap{
+  width: 50%;
+}
+.assign-wrap{
+  border: 2px solid red;
+  width: 450px;
+  height: 190px;
+  border-radius: 12px;
+  font-family: Inter-regular;
+}
+.assign-title{
+  font-weight: 600;
+  font-size: 18px;
+  height: 30px;
+  width: 50%;
+  display: flex;
+  align-items: end;
+  margin-left: 20px;
+}
+.sub-assign-title{
+  display: flex;
+  position: relative;
+  height: 30px;
+}
+.assign-status{
+  display: flex;
+  align-items: end;
+  height: inherit;
+  color: #677091;
+  width: 50%;
+}
+.sub-assign-wrap{
+  border: 2px solid yellow;
+  width: 450px;
+  height: fit-content;
+  margin-top: 20px;
+  border-radius: 12px;
+  font-family: Inter-regular;
+}
+.assign-desc-wrap{
+  display: flex;
+  position: relative;
+  height: 50px;
+  align-items: center;
+}
+.assignment{
+  width: 50%;
+  margin-left: 20px;
+}
+.status{
+  width: 50%;
+  position: relative;
+  display: flex;
+  height: 20px;
+}
+.status-text{
+}
+.status-icon{
+  width: 20px;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15px;
+  font-size: 14px;
+}
+.dash-2{
+  display: flex;
+  width: 100%;
+}
 
 @media screen and (max-width: 1020px) and (min-width:50px){
   .sign-in{
@@ -913,6 +1009,20 @@ display: none;
     margin-top: -250px;
   }
   .contact{
+    margin-top: 50px;
+  }
+  .dash-1{
+    flex-direction: column;
+  }
+  .dash-2{
+    flex-direction: column;
+    margin-left: 150px;
+    margin-top: 50px;
+  }
+  .notification-wrap{
+    margin-left: 150px;
+  }
+  .assignment-wrap{
     margin-top: 50px;
   }
 }
