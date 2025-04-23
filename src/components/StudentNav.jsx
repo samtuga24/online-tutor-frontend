@@ -20,7 +20,7 @@ export const StudentNav = () => {
         <div className="nav-buttons">
           <div className='account-wrap'>
             <div className="acc-icon"><MdAccountCircle/></div>
-            <div className="acc-name">Hi, Samtuga</div>
+            <div className="acc-name" onc>Hi, Samtuga</div>
           </div>
           {/* <div className="mobile-nav"><FaBars onClick={clickHamburger}/></div> */}
         </div>

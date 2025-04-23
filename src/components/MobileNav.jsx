@@ -16,10 +16,8 @@ export const MobileNav = () => {
             </div>
             <div className="m-nav-wrap">
                 <div className="m-list">
-                    {/* <Link to="../login" className='nav-link'>Login</Link> */}
                     <Link className="ml-1 m-nav-link" to='../login' ><div>Login</div></Link>
                     <Link className="ml-1 m-nav-link" to='../signup' ><div>Sign up</div></Link>
-                    {/* <Link className="ml-1" to='' spy={false} smooth={true} offset={-100} duration={800}><div>Sign Up</div></Link> */}
                 </div>
             </div>
         </div>
